@@ -1,3 +1,11 @@
+$font-family: arial, helvetica, sans-serif;
+$font-size: 30px;
+
+html {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -6,9 +14,6 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-$font-family: arial, helvetica, sans-serif;
-$font-size: 30px;
 
 .calendar {
   display: flex;
@@ -38,8 +43,6 @@ $font-size: 30px;
 @for $i from 1 through 31 {
   .calendar :nth-child(#{$i})::after {
     content: "#{$i}";
-    font-family: $font-family;
-    font-size: $font-size;
   }
 }
 
